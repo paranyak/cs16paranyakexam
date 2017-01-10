@@ -15,6 +15,8 @@ public class JsonObject extends Json {
         }
     }
 
+
+
     @Override
     public String toJson() {
         String s = "{";
@@ -52,5 +54,9 @@ public class JsonObject extends Json {
             }
         }
         return j;
+    }
+
+    public boolean contains(String name){
+        return (this.jsonPairs.containsKey(name));
     }
 }
